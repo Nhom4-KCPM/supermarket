@@ -8,30 +8,36 @@
         </div>
         <div class="agile-login">
             <ul>
-                <asp:LoginView ID="LoginView1" runat="server">
+                <asp:LoginView ID="LoginViewHeader" runat="server">
                     <AnonymousTemplate>
                         <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Register.aspx">Create Account</asp:HyperLink></li>
                         <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink></li>
                     </AnonymousTemplate>
                     <LoggedInTemplate>
-                        <div id="dropdown-menu-user" class="btn-group">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                <asp:LoginName ID="LoginName1" runat="server" />
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li>
-                                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Member/Account.aspx">My Account</asp:HyperLink>
-                                </li>
-                                <li>
-                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Member/MyOrders.aspx">My Orders</asp:HyperLink>
-                                </li>
-                                <li>
-                                    <asp:LoginStatus ID="LoginStatus1" runat="server" />
-                                </li>
-                            </ul>
-                        </div>
-                        </LoggedInTemplate>
+                        <li>
+                            <asp:HyperLink ID="HyperLinkAdmin" runat="server" NavigateUrl="~/Admin/Default.aspx">Administration</asp:HyperLink>
+                        </li>
+
+                        <li>
+                            <div id="dropdown-menu-user" class="btn-group">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <asp:LoginName ID="LoginName1" runat="server" />
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li>
+                                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Member/Account.aspx">My Account</asp:HyperLink>
+                                    </li>
+                                    <li>
+                                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Member/MyOrders.aspx">My Orders</asp:HyperLink>
+                                    </li>
+                                    <li>
+                                        <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                     </LoggedInTemplate>
                 </asp:LoginView>
                 
                 <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Contact.aspx">Help</asp:HyperLink></li>

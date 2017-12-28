@@ -21,6 +21,10 @@ a.btn.btn-default.search:hover {
     border: 1px solid #ddd;
 }
 
+.pagination > a:not([class]) {
+    display: none !important;
+}
+
 .pagination > a:hover {
     color: #23527c;
     background-color: #eee;
@@ -152,4 +156,22 @@ a.btn.btn-default.search:hover {
 
 .action {
     margin-top: 20px;
+}
+
+/* Carousel */
+.carousel .product {
+    text-align: center;
+    border: 1px solid silver;
+    padding: 5px;
+}
+
+.carousel .product span {
+    text-decoration: line-through;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+/* Table */
+table th {
+    text-align: center;
 }

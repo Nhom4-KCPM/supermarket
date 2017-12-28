@@ -3,7 +3,6 @@
 <%@ Register Src="~/WebUC/Categories.ascx" TagPrefix="uc1" TagName="Categories" %>
 <%@ Register Src="~/WebUC/ItemList.ascx" TagPrefix="uc1" TagName="ItemList" %>
 
-
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
